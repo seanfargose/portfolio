@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sean Fargose — Cloud Engineer focused on Azure infrastructure, enterprise migration, cloud operations, automation, networking, and FinOps.">
+  <meta name="author" content="Sean Fargose">
+  <meta name="theme-color" content="#07111f">
+  <meta property="og:title" content="Sean Fargose | Cloud Engineer">
+  <meta property="og:description" content="Azure infrastructure, enterprise cloud migration, operations, automation, and AI-powered FinOps.">
+  <meta property="og:type" content="website">
+  <title>Sean Fargose | Cloud Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="src/styles/styles.css">
+<script>
+  (() => {
+    try {
+      const saved = localStorage.getItem("portfolio-theme");
+      const system = window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+      document.documentElement.dataset.theme = saved === "light" || saved === "dark" ? saved : system;
+    } catch (_) {
+      document.documentElement.dataset.theme = window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+    }
+  })();
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="ambient ambient-a" aria-hidden="true"></div>
+<div class="ambient ambient-b" aria-hidden="true"></div>
+<div class="grid-glow" aria-hidden="true"></div>
+<canvas id="cloud-canvas" aria-hidden="true"></canvas>
+
+<header class="site-header">
+  <nav class="nav container" aria-label="Primary navigation">
+    <a class="brand" href="#home" aria-label="Sean Fargose home"><span>SF</span><i>.</i></a>
+    <div class="nav-links">
+      <a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#research">Research</a><a href="#contact">Contact</a>
+    </div>
+    <div class="nav-actions">
+      <button class="icon-btn mobile-menu-toggle" id="mobile-menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-menu"><i class="fas fa-bars"></i></button>
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch to light mode" title="Toggle theme"><i class="fas fa-moon"></i></button>
+      <a class="nav-resume" href="src/img/Sean_Capgemini_Resume.pdf" target="_blank" rel="noopener">Resume <i class="fas fa-arrow-up-right-from-square"></i></a>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#cloud-lab">Cloud Lab</a>
+    <a href="#research">Research</a>
+    <a href="#contact">Contact</a>
+  </div>
+</header>
+
+<main id="main">
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy reveal">
+        <div class="status-pill"><span class="status-dot"></span> Cloud Engineer · Azure · DevOps</div>
+        <p class="eyebrow">INFRASTRUCTURE · MIGRATION · AUTOMATION · FINOPS</p>
+        <h1>Engineering cloud systems that are <span>reliable, scalable & cost-aware.</span></h1>
+        <p class="hero-summary">Cloud Engineer experienced in Azure infrastructure, enterprise migration, L2 cloud operations, VMware HCX, automation, networking, security, monitoring, and AI-assisted cost optimization.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">Explore my work <i class="fas fa-arrow-right"></i></a>
+          <a class="btn btn-secondary" href="src/img/Sean_Capgemini_Resume.pdf" target="_blank" rel="noopener">View resume <i class="fas fa-file-lines"></i></a>
+        </div>
+        <div class="hero-links"><a href="https://github.com/seanfargose" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a><a href="https://www.linkedin.com/in/seanfargose" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> LinkedIn</a><a href="mailto:fargose.sean2808@gmail.com"><i class="fas fa-envelope"></i> Email</a></div>
+      </div>
+
+      <div class="hero-visual reveal delay-1">
+        <div class="orbital orbital-one"></div><div class="orbital orbital-two"></div>
+        <div class="glass-stack">
+          <div class="float-chip chip-azure"><i class="fas fa-cloud"></i> Azure</div>
+          <div class="float-chip chip-aws"><i class="fab fa-aws"></i> AWS</div>
+          <div class="float-chip chip-devops"><i class="fas fa-code-branch"></i> CI/CD</div>
+          <div class="terminal">
+            <div class="terminal-bar"><span></span><span></span><span></span><b>cloud@sean:~</b></div>
+            <pre><code><span class="code-muted">$</span> whoami
+<span class="code-accent">sean-fargose</span>
+
+<span class="code-muted">$</span> cloud stack
+Azure  AWS  GCP
+VMware HCX  Linux  Docker
+Terraform  GitHub Actions
+
+<span class="code-muted">$</span> production status
+<span class="code-success">● 99.9% availability</span>
+<span class="code-success">● 150+ Azure VMs</span>
+<span class="code-success">● 19 subscriptions</span>
+
+<span class="code-muted">$</span> <span class="cursor">▌</span></code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-cue"><span></span> Scroll to explore</div>
+  </section>
+
+  <section class="proof-strip">
+    <div class="container proof-grid">
+      <div><strong>150+</strong><span>Azure VMs supported</span></div><div><strong>19</strong><span>Azure subscriptions</span></div><div><strong>99.9%</strong><span>Reported availability</span></div><div><strong>76/108</strong><span>VMs migrated to AVS</span></div><div><strong>$105K+</strong><span>Annualized savings modeled</span></div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-heading reveal"><p class="eyebrow">01 · ABOUT</p><h2>Cloud engineering with an <span>operations mindset.</span></h2><p>My work sits at the intersection of infrastructure, reliability, migration, automation, and software.</p></div>
+      <div class="about-grid">
+        <div class="about-copy reveal">
+          <p class="lead">I currently work as a Cloud Analyst Engineer at Capgemini, designing, administering, troubleshooting, and optimizing enterprise cloud environments.</p>
+          <p>My recent work spans Azure virtual machines, Azure SQL, PostgreSQL, App Services, Functions, Data Factory, service principals, RBAC, Linux, disaster recovery, monitoring, and enterprise VMware-to-Azure migration.</p>
+          <div class="cloud-domains"><div><i class="fas fa-server"></i><span>Cloud Operations</span><small>Monitoring · Incident response · SLA</small></div><div><i class="fas fa-network-wired"></i><span>Migration</span><small>AVS · HCX · Azure Migrate</small></div><div><i class="fas fa-shield-halved"></i><span>Platform Security</span><small>RBAC · Secrets · Networking</small></div><div><i class="fas fa-chart-line"></i><span>FinOps</span><small>Forecasting · Waste · Optimization</small></div></div>
+        </div>
+        <div class="glass-panel reveal delay-1">
+          <div class="panel-label">TECHNOLOGY RADAR</div>
+          <div class="radar-grid"><div class="radar-item hot"><span>Azure</span><b>Core</b></div><div class="radar-item hot"><span>VMware HCX</span><b>Migration</b></div><div class="radar-item"><span>AWS</span><b>Projects</b></div><div class="radar-item"><span>GCP</span><b>Projects</b></div><div class="radar-item"><span>Docker</span><b>Delivery</b></div><div class="radar-item"><span>Terraform</span><b>IaC</b></div><div class="radar-item"><span>Linux</span><b>Ops</b></div><div class="radar-item"><span>PostgreSQL</span><b>Data</b></div></div>
+          <div class="mini-terminal"><span>$</span> kubectl get mindset <b>reliability-first</b></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="section section-alt">
+    <div class="container">
+      <div class="section-heading reveal"><p class="eyebrow">02 · EXPERIENCE</p><h2>Production cloud work, <span>not just demos.</span></h2><p>Selected responsibilities from my current enterprise cloud role.</p></div>
+      <div class="experience-shell reveal">
+        <div class="experience-main">
+          <div class="timeline-item active"><div class="timeline-marker"><i class="fas fa-cloud"></i></div><div><div class="timeline-meta">Sep 2025 — Present · Capgemini</div><h3>Cloud Analyst Engineer</h3><p>Enterprise cloud infrastructure, operations, migration, troubleshooting, automation, monitoring, and platform administration.</p><div class="tags"><span>Azure</span><span>Linux</span><span>Networking</span><span>Databases</span><span>Monitoring</span></div></div></div>
+          <div class="timeline-item"><div class="timeline-marker"><i class="fas fa-diagram-project"></i></div><div><div class="timeline-meta">Dec 2025 — May 2026 · MARTA engagement</div><h3>Azure VMware Solution Migration</h3><p>Migrated 76 of 108 on-premises VMware VMs to Azure VMware Solution, using HCX Connector, Site Pairing, Network Profiles, Compute Profiles, Service Mesh, vCenter, and Azure Migrate.</p><div class="tags"><span>AVS</span><span>HCX</span><span>vMotion</span><span>Azure Migrate</span></div></div></div>
+          <div class="timeline-item"><div class="timeline-marker"><i class="fas fa-server"></i></div><div><div class="timeline-meta">Jun 2026 — Present · Volvo engagement</div><h3>Azure Operations & L2 Support</h3><p>Supporting 150+ Azure VMs across 19 subscriptions while managing Azure SQL, PostgreSQL, App Services, Functions, containers, service principals, RBAC, secrets, disks, storage, DR, and production incidents.</p><div class="tags"><span>150+ VMs</span><span>19 subscriptions</span><span>99.9% availability</span></div></div></div>
+        </div>
+        <aside class="ops-console"><div class="console-top"><span>LIVE OPS VIEW</span><span class="live-dot">● operational</span></div><div class="metric"><span>VM fleet</span><strong>150+</strong></div><div class="metric"><span>Subscriptions</span><strong>19</strong></div><div class="metric"><span>Availability</span><strong>99.9%</strong></div><div class="metric"><span>Migration</span><strong>70%</strong></div><div class="console-line"><span></span> Monitoring healthy</div><div class="console-line"><span></span> SLA tracking active</div><div class="console-line"><span></span> DR readiness maintained</div></aside>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-heading reveal"><p class="eyebrow">03 · PROJECTS</p><h2>Systems I built to <span>solve real problems.</span></h2><p>Cloud-native infrastructure, distributed systems, and an AI-powered FinOps platform.</p></div>
+      <div class="project-grid">
+        <article class="project-card featured finops-card reveal">
+          <div class="project-visual dashboard-preview"><img src="src/img/ai-cost-dashboard-1.png" alt="AI Cost Intelligence Platform dashboard showing cloud spend insights and alerts" loading="lazy"><div class="visual-overlay"><span>AI · FINOPS</span><button class="preview-btn" type="button" data-gallery="finops">Open live preview <i class="fas fa-expand"></i></button></div></div>
+          <div class="project-body"><div class="project-label">FEATURED · MULTI-CLOUD · AI</div><h3>AI-Powered Multi-Cloud Cost Intelligence Platform</h3><p>Built a FinOps platform that brings Azure, AWS, and GCP cost data into one workflow for monitoring, anomaly detection, forecasting, root-cause analysis, and optimization recommendations.</p><div class="project-metrics"><div><strong>30</strong><span>cost records</span></div><div><strong>$48.8K</strong><span>spend analyzed</span></div><div><strong>$8.8K</strong><span>opportunity</span></div><div><strong>96%</strong><span>AI confidence</span></div></div><div class="tags"><span>Azure</span><span>AWS</span><span>GCP</span><span>Node.js / TypeScript</span><span>PostgreSQL</span><span>Redis</span><span>Docker</span><span>AI Agents</span></div><div class="project-actions"><button class="text-btn" type="button" data-gallery="finops">View 3D case study <i class="fas fa-arrow-right"></i></button><a class="text-btn" href="https://github.com/seanfargose" target="_blank" rel="noopener">GitHub profile <i class="fas fa-arrow-up-right-from-square"></i></a></div></div>
+        </article>
+
+        <article class="project-card reveal delay-1"><img src="src/img/kafka.jpeg" alt="Kafka Spring Boot application" loading="lazy"><div class="project-body"><div class="project-label">DISTRIBUTED SYSTEMS</div><h3>Kafka + Spring Boot Reactive Pipeline</h3><p>Reactive event-driven application using Spring Boot, Kafka, Wikimedia Recent Changes, and DynamoDB for stream processing.</p><div class="tags"><span>Spring Boot</span><span>Kafka</span><span>WebFlux</span><span>DynamoDB</span></div><a class="text-btn" href="https://github.com/seanfargose" target="_blank" rel="noopener">Explore on GitHub <i class="fas fa-arrow-up-right-from-square"></i></a></div></article>
+        <article class="project-card reveal delay-2"><img src="src/img/port2.png" alt="Alumni association platform project" loading="lazy"><div class="project-body"><div class="project-label">PLATFORM ENGINEERING</div><h3>Alumni Association Platform</h3><p>Full-stack platform concept combining networking, jobs, donations, mentorship, scholarships, recruitment APIs, and real-time video.</p><div class="tags"><span>React</span><span>Node.js</span><span>MongoDB</span><span>Redis</span><span>APIs</span></div><a class="text-btn" href="https://github.com/seanfargose" target="_blank" rel="noopener">Explore on GitHub <i class="fas fa-arrow-up-right-from-square"></i></a></div></article>
+        <article class="project-card reveal"><img src="src/img/filecomp.png" alt="Huffman file compression project" loading="lazy"><div class="project-body"><div class="project-label">ALGORITHMS</div><h3>File Compression with Huffman Coding</h3><p>Implemented Huffman encoding and decoding for file compression and decompression while preserving data integrity.</p><div class="tags"><span>Java</span><span>Algorithms</span><span>Binary Trees</span></div></div></article>
+        <article class="project-card reveal"><div class="architecture-card"><div class="arch-node"><i class="fas fa-cloud"></i><span>Cloud</span></div><div class="arch-line"></div><div class="arch-node"><i class="fas fa-gears"></i><span>Automation</span></div><div class="arch-line"></div><div class="arch-node"><i class="fas fa-chart-line"></i><span>Observability</span></div></div><div class="project-body"><div class="project-label">ENGINEERING APPROACH</div><h3>Infrastructure → Automation → Observability</h3><p>I build systems around repeatable delivery, measurable reliability, secure access, and operational visibility rather than one-off deployments.</p><div class="tags"><span>IaC</span><span>CI/CD</span><span>Monitoring</span><span>Security</span></div></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="cloud-lab" class="section cloud-lab-section">
+    <div class="container">
+      <div class="section-heading reveal">
+        <p class="eyebrow">04 · CLOUD LAB</p>
+        <h2>Turn a cloud incident into a <span>mini mission.</span></h2>
+        <p>A small interactive SRE-style game: find and resolve the highlighted incidents before the timer expires.</p>
+      </div>
+      <div class="cloud-lab reveal">
+        <div class="lab-head">
+          <div>
+            <span class="lab-kicker"><i class="fas fa-satellite-dish"></i> INCIDENT RESPONSE SIMULATOR</span>
+            <h3>Cloud Ops: Restore Service</h3>
+          </div>
+          <div class="lab-stats">
+            <div><span>TIME</span><strong id="game-time">30s</strong></div>
+            <div><span>RESOLVED</span><strong id="game-score">0/8</strong></div>
+          </div>
+        </div>
+        <div class="lab-map" id="cloud-game" role="application" aria-label="Cloud incident response mini game">
+          <div class="cloud-core"><i class="fas fa-cloud"></i><span>PROD</span><b>healthy</b></div>
+          <div class="game-node node-1" data-incident="1" aria-label="Resolve incident 1"><i class="fas fa-server"></i></div>
+          <div class="game-node node-2" data-incident="2" aria-label="Resolve incident 2"><i class="fas fa-database"></i></div>
+          <div class="game-node node-3" data-incident="3" aria-label="Resolve incident 3"><i class="fas fa-network-wired"></i></div>
+          <div class="game-node node-4" data-incident="4" aria-label="Resolve incident 4"><i class="fas fa-shield-halved"></i></div>
+          <div class="game-node node-5" data-incident="5" aria-label="Resolve incident 5"><i class="fas fa-box"></i></div>
+          <div class="game-node node-6" data-incident="6" aria-label="Resolve incident 6"><i class="fas fa-chart-line"></i></div>
+          <div class="game-node node-7" data-incident="7" aria-label="Resolve incident 7"><i class="fas fa-bolt"></i></div>
+          <div class="game-node node-8" data-incident="8" aria-label="Resolve incident 8"><i class="fas fa-gears"></i></div>
+          <div class="data-stream stream-a"></div><div class="data-stream stream-b"></div><div class="data-stream stream-c"></div>
+        </div>
+        <div class="lab-footer">
+          <p id="game-message" aria-live="polite"><i class="fas fa-circle-info"></i> Click the pulsing incident nodes to restore the environment.</p>
+          <button class="btn btn-secondary game-start" id="game-start" type="button"><i class="fas fa-play"></i><span>Start mission</span></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="research" class="section section-alt">
+    <div class="container">
+      <div class="section-heading reveal"><p class="eyebrow">05 · RESEARCH</p><h2>Engineering curiosity beyond <span>infrastructure.</span></h2><p>Research work in NLP, machine learning, computer vision, and predictive modeling.</p></div>
+      <div class="research-grid">
+        <article class="research-card reveal"><div class="research-icon"><i class="fas fa-code-branch"></i></div><h3>Automated Feature Extraction from Version Control Artifacts</h3><p>Feature extraction and documentation from GitHub repositories using Selenium, GitHub API, LangChain, BART, BERT, and GPT-4.</p><div class="tags"><span>NLP</span><span>BERT</span><span>BART</span><span>GitHub API</span></div></article>
+        <article class="research-card reveal delay-1"><div class="research-icon"><i class="fas fa-flag-checkered"></i></div><h3>Hybrid Predictive Modeling for F1 Race Outcomes</h3><p>Hybrid approach combining Random Forest with Graph Neural Networks to refine race outcome predictions.</p><div class="tags"><span>Random Forest</span><span>GNN</span><span>SMOTE</span></div></article>
+        <article class="research-card reveal"><div class="research-icon"><i class="fas fa-microscope"></i></div><h3>Integrated Detection of Liver Fibrosis & Cirrhosis</h3><p>Research combining ultrasound imaging and blood-test analysis for liver fibrosis and cirrhosis assessment.</p><div class="tags"><span>Deep Learning</span><span>Medical AI</span><span>Computer Vision</span></div></article>
+        <article class="research-card reveal delay-1"><div class="research-icon"><i class="fas fa-palette"></i></div><h3>Dynamic Neural Style Transfer</h3><p>VGG19-based neural style transfer work for artistic image generation and flexible style blending.</p><div class="tags"><span>VGG19</span><span>Deep Learning</span><span>Computer Vision</span></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact-section">
+    <div class="container contact-grid">
+      <div class="reveal"><p class="eyebrow">06 · CONTACT</p><h2>Let's build something <span>reliable.</span></h2><p class="lead">Open to cloud engineering, DevOps, infrastructure automation, platform engineering, and relevant opportunities.</p><div class="contact-list"><a href="mailto:fargose.sean2808@gmail.com"><i class="fas fa-envelope"></i> fargose.sean2808@gmail.com</a><a href="https://www.linkedin.com/in/seanfargose" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> linkedin.com/in/seanfargose</a><a href="https://github.com/seanfargose" target="_blank" rel="noopener"><i class="fab fa-github"></i> github.com/seanfargose</a></div></div>
+      <form id="contact-form" class="contact-form reveal delay-1" novalidate>
+        <div class="form-head"><span>SECURE MESSAGE CHANNEL</span><i class="fas fa-lock"></i></div>
+        <label>Name<input type="text" id="from_name" name="from_name" autocomplete="name" placeholder="Your name" required></label>
+        <label>Email<input type="email" id="from_email" name="from_email" autocomplete="email" placeholder="you@example.com" required></label>
+        <label>Subject<input type="text" id="subject" name="subject" placeholder="Cloud opportunity / collaboration" required></label>
+        <label>Message<textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea></label>
+        <button type="submit" class="btn btn-primary"><span class="btn-text">Send message</span><i class="fas fa-paper-plane"></i></button>
+        <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<div class="modal" id="gallery-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="AI Cost Intelligence Platform preview">
+  <div class="modal-backdrop" data-close-modal></div>
+  <div class="modal-card">
+    <button class="modal-close" type="button" data-close-modal aria-label="Close preview"><i class="fas fa-xmark"></i></button>
+    <div class="modal-head"><div><span class="eyebrow">AI FINOPS CASE STUDY</span><h3>Cost Intelligence Platform</h3></div><span class="confidence"><i class="fas fa-sparkles"></i> 96% reported AI confidence</span></div>
+    <div class="gallery-stage"><button class="gallery-nav prev" type="button" data-gallery-prev aria-label="Previous screenshot"><i class="fas fa-chevron-left"></i></button><img id="gallery-image" src="src/img/ai-cost-dashboard-1.png" alt="AI Cost Intelligence Platform screenshot"><button class="gallery-nav next" type="button" data-gallery-next aria-label="Next screenshot"><i class="fas fa-chevron-right"></i></button></div>
+    <div class="gallery-caption"><strong id="gallery-title">Cost Intelligence Overview</strong><span id="gallery-count">1 / 3</span></div>
+    <div class="case-study-grid"><div><span>Architecture</span><strong>Azure · AWS · GCP → Node.js/TS → PostgreSQL + Redis → AI agents</strong></div><div><span>Signals</span><strong>Anomalies · waste · rightsizing · storage · commitments</strong></div><div><span>Modeled outcome</span><strong>$8.8K optimization opportunity · $105K+ annualized savings</strong></div></div>
+  </div>
+</div>
+
+<footer class="footer"><div class="container"><p>© <span id="year"></span> Sean Fargose · Cloud Engineer</p><a href="#home">Back to top <i class="fas fa-arrow-up"></i></a></div></footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="src/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+name: Optional AWS S3 Portfolio Deployment
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write
+
+concurrency:
+  group: deploy-portfolio
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-region: ${{ secrets.AWS_REGION }}
+          role-to-assume: ${{ secrets.AWS_DEPLOY_ROLE_ARN }}
+
+      - name: Validate website files
+        run: |
+          test -f website/index.html
+          test -f website/404.html
+          test -f website/src/styles/styles.css
+          test -f website/src/app.js
+
+      - name: Deploy to S3
+        run: aws s3 sync website/ s3://${{ secrets.AWS_S3_BUCKET }}/ --delete
+
+      - name: Deployment summary
+        run: |
+          echo "Portfolio deployed to s3://${{ secrets.AWS_S3_BUCKET }}/"
+          echo "Region: ${{ secrets.AWS_REGION }}"
